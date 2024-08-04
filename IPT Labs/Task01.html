@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 4px;
+            color: blue;
+        }
+
+        h1 {
+            border-top: 4px solid rgb(0, 0, 79);
+            border-bottom: 4px solid rgb(0, 0, 79);
+            padding: 4px;
+            color: rgb(1, 1, 158);
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            column-gap: 1.5rem;
+            padding: 1rem 0;
+        }
+
+        h2 {
+            color: rgb(1, 1, 158);
+        }
+
+        hr {
+            border: 1px solid rgb(140, 140, 140);
+        }
+
+        .detail p {
+            margin: 1rem auto;
+        }
+
+        .contact {
+            border: solid;
+            height: fit-content;
+            padding: 1rem;
+            width: 300px;
+        }
+
+        .contact-info {
+            margin: 12px auto;
+        }
+
+        @media(max-width:760px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .detail {
+                margin-bottom: 1rem;
+            }
+
+            .contact {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>XYZ DEVELOPER</h1>
+    </header>
+    <main class="content">
+        <section class="detail">
+            <div>
+                <h2>Objective</h2>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nihil?</p>
+            </div>
+            <div>
+                <h2>Education</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptas!</p>
+            </div>
+            <div>
+                <h2>Experience</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, dignissimos!</p>
+            </div>
+            <div>
+                <h2>Skills</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, impedit?</p>
+            </div>
+            <div>
+                <h2>References</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, hic.</p>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <hr>
+            <div class="contact-info">
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
